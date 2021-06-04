@@ -23,14 +23,13 @@
             require Library.$class.".php";
         }
     });
-
-    $controller = $controller.'Controller';
-    $controllersPath="Controllers/".$controller.'.php';
+    
+    $controller = $controller."Controller";
+    $controllersPath="Controllers/".$controller.".php";
     if(file_exists($controllersPath)){
         require $controllersPath;
         $controller = new $controller();
     }
-
     //echo $controller." ".$method." ".$params;
 
 ?>

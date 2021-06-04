@@ -1,8 +1,7 @@
 <?php
-class indexController{
-    public function __construct() {
-        echo "Mi primer controlador";
+class IndexController extends Controllers{
+    public function __construct(){
+        parent::__construct;
     }
 }
-
 ?>
